@@ -5,20 +5,7 @@
 	margin: 0;
 	padding: 0;
 }
-/*body {
-	width: 100%;
-	height: 150%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 2vw;
-	background-image: url("https://wallpaperaccess.com/full/467833.jpg");
-	background-attachment: fixed;
-	background-position: 50% 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	/*	overflow-x: clip;
-}*/
+
 .global-container {
 	width: 100%;
 	height: 500vw;
@@ -157,7 +144,7 @@
 
 @media screen and (max-width: 768px) {
 	.global-container {
-		height: 1000vw;
+		height: 1200vw;
 	}
 	.face {
 		width: 80vw;
