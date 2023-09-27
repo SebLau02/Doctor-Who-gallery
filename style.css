@@ -8,7 +8,7 @@
 
 .global-container {
 	width: 100%;
-	height: 500vw;
+	height: 530vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -32,6 +32,8 @@
 	font-size: clamp(1rem, 2vw, 3rem);
 	color: #f4f0e6;
 	backdrop-filter: blur(8px);
+	opacity: 1;
+	animation: fadeIn 1s 0.1s ease forwards;
 }
 .tower {
 	position: relative;
@@ -46,6 +48,8 @@
 	left: 50%;
 	display: grid;
 	grid-template-rows: repeat(15, 30vw);
+	opacity: 1;
+	animation: fade 2s ease forwards;
 }
 .face1 {
 	transform-origin: center;
@@ -141,6 +145,21 @@
 .face5 :nth-child(3) {
 	grid-row: 15/16;
 }
+
+/*---------------- keyframes ----------------*/
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-50%);
+	}
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+}
+/*---------------- media ----------------*/
 
 @media screen and (max-width: 768px) {
 	.global-container {

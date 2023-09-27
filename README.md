@@ -4,7 +4,7 @@
 
 ### Description
 
-Petite galerie d'un série que j'adore: Doctor who.
+Petite galerie d'une série que j'adore: Doctor who.
 
 ### Détail
 
