@@ -1,6 +1,8 @@
 const tower = document.querySelector(".tower");
 const globalContainer = document.querySelector(".global-container");
 const image = document.querySelectorAll(".image");
+const loader = document.querySelector(".loader");
+const article = document.querySelectorAll("article");
 
 window.addEventListener("scroll", () => {
 	const scrollY = window.scrollY;
@@ -31,3 +33,14 @@ const handleScroll = (scrollY) => {
 		imageObserver.observe(element);
 	});
 };
+
+window.addEventListener("load", function () {
+	setTimeout(() => {
+		loader.classList.add("inactive");
+		loader.style.display = "flex";
+		setTimeout(() => {
+			article.forEach((article) => (article.style.display = "block"));
+			loader.style.display = "none";
+		}, 200);
+	}, 1000);
+});
